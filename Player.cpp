@@ -10,7 +10,12 @@ void Player::Initialize()
 void Player::Update()
 {
 
+	pos = playerSprite->GetPosition();
+
 	pos.y += g;
+
+	playerSprite->SetPosition(pos);
+
 
 }
 
